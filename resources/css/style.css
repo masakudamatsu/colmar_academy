@@ -1,0 +1,5 @@
+* {
+  box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
+  margin: 0;              /* Reset the browser's default value */
+  padding: 0;             /* Reset the browser's default value */
+}
