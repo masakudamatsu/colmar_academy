@@ -14,3 +14,48 @@ html {
   width: 100%;
 }
 
+/* Header */
+header nav {
+  height: 4rem;
+}
+
+nav.mobile-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.desktop-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.mobile-nav {
+    display: none;
+  }
+
+  nav.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    padding-left: 1rem;
+  }
+}
