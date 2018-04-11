@@ -3,3 +3,8 @@
   margin: 0;              /* Reset the browser's default value */
   padding: 0;             /* Reset the browser's default value */
 }
+
+/* Universal style */
+html {
+  font-size: 16px;
+}
