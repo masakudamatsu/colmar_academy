@@ -2,6 +2,7 @@
   box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
   margin: 0;              /* Reset the browser's default value */
   padding: 0;             /* Reset the browser's default value */
+  text-decoration: none;  /* Remove the underline from the anchor tag */
 }
 
 /* Universal style */
@@ -58,4 +59,45 @@ nav.desktop-nav {
   nav ul li {
     padding-left: 1rem;
   }
+}
+
+/* Banner */
+.banner {
+  background-color: silver; /* temporary */
+}
+
+.banner .container {
+  padding: 0;
+}
+
+.banner figure {
+  width: 100%;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner-text {
+  padding: 2rem 1rem;
+}
+
+.banner-text h2 {
+  font-size: 4rem; /* temporary */
+}
+
+.banner-text p {
+  font-size: 2rem; /* temporary */
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+.button {
+  background-color: gray; /* temporary */
+  color: white; /* temporary */
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
 }
