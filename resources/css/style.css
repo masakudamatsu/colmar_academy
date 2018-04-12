@@ -15,11 +15,20 @@ html {
   width: 100%;
 }
 
+h2 {
+  font-size: 4rem; /* temporary */
+}
+
+h3 {
+  font-size: 2rem; /* temporary */
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0 1.5rem;
   }
 }
+
 
 /* Header */
 header nav {
@@ -88,10 +97,6 @@ nav.desktop-nav {
   padding: 2rem 1rem;
 }
 
-.banner-text h2 {
-  font-size: 4rem; /* temporary */
-}
-
 .banner-text p {
   font-size: 2rem; /* temporary */
   padding-bottom: 1.5rem;
@@ -134,4 +139,34 @@ img.desktop {
 
 .read-more:last-child .read-more-container {
   padding-bottom: 0;
+}
+
+/* Courses */
+.courses {
+  align-items: center;
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.courses h2 {
+  padding-bottom: 0.5rem;
+}
+
+.course {
+  background-color: silver; /* Temporary */
+  margin-top: 0.5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+  width: 100%;
+}
+
+.courses h3 {
+  text-align: center;
+}
+
+.courses figure,
+.courses h6,
+.courses p {
+  display: none;
 }
