@@ -170,3 +170,27 @@ img.desktop {
 .courses p {
   display: none;
 }
+
+/* Exhibits */
+.exhibit {
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.exhibit h2 {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+}
+
+.thesis-main h3,
+.thesis-main p {
+  display: none;
+}
+
+.theses {
+  display: none;
+}
