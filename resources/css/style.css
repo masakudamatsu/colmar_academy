@@ -194,3 +194,12 @@ video {
 .theses {
   display: none;
 }
+
+/* Footer */
+footer {
+  padding: 1rem 0;
+}
+
+footer nav {
+  display: none;
+}
