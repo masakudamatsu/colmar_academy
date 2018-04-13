@@ -370,6 +370,10 @@ footer nav {
   .thesis-main p {
     padding-top: 0.5rem;
   }
+
+  .thesis:first-child {
+    background: silver;
+  }
   /* Footer (Desktop) */
 
   footer {
