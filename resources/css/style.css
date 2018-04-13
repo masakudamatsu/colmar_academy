@@ -51,7 +51,7 @@ nav.desktop-nav {
 
 .main {
   position: relative;
-  top: 4rem;
+  top: 4rem; /* Same as header nav height */
 }
 
 /* Banner */
