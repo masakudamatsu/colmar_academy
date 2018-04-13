@@ -151,7 +151,7 @@ img.desktop {
 }
 
 .courses h2 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem; /* together with the .course class's margin-top 0.5rem, the total space is 1rem below h2. */
 }
 
 .course {
