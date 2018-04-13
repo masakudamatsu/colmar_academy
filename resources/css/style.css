@@ -171,6 +171,73 @@ img.desktop {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .courses {
+    background-color: silver;
+    border: none;
+    padding: 2rem 4.5rem;
+  }
+
+  .courses h2 {
+    padding-bottom: 1rem;
+  }
+
+  .course-container {
+    align-items: stretch; /* For the .course class to be of equal height */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .course-container:last-child {
+    margin-top: 2rem;
+  }
+
+  .courses figure,
+  .courses h6,
+  .courses p {
+    display: block;
+  }
+
+  .course {
+    background-color: white; /* Temporary */
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-top: 0rem; /* Reset the mobile layout */
+    padding: 0 0 1.5rem 0;
+    width: 31%;
+  }
+
+  .course:first-child {
+    margin-left: 0;
+  }
+
+  .course figure img {
+    height: auto;
+    width: 100%;
+  }
+
+  .course h3,
+  .course h6,
+  .course p {
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  .course h3 {
+    padding-top: 1rem;
+  }
+
+  .course h6 {
+    padding-top: 0.5rem;
+  }
+
+  .course p {
+    padding-top: 0.5rem;
+  }
+}
+
 /* Exhibits */
 .exhibit {
   padding-bottom: 1.5rem;
