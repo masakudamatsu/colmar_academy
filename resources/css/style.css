@@ -27,6 +27,16 @@ h3 {
   .container {
     padding: 0 1.5rem;
   }
+  
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    padding-left: 1rem;
+  }
 }
 
 
@@ -63,16 +73,6 @@ nav.desktop-nav {
 
   .logo img {
     height: 2rem;
-  }
-
-  nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    padding-left: 1rem;
   }
 }
 
@@ -202,4 +202,20 @@ footer {
 
 footer nav {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    border-top: 1px solid silver;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer nav {
+    display: block;
+  }
+  footer nav span {
+    padding-left:
+  }
 }
