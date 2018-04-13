@@ -203,15 +203,23 @@ footer nav {
   }
 
   .desktop-right section {
+    align-items: center;
+    border: 1px solid silver;
     display: flex;
   }
 
   .desktop-right section figure {
+    padding: 1rem;
     width: 35%;
   }
 
   .read-more-container {
+    padding: 0;
     width: 65%;
+  }
+
+  .read-more-container p {
+    padding-top: 0.5rem;
   }
 
   /* Header (Desktop) */
@@ -255,6 +263,10 @@ footer nav {
 
   .testimony p {
     padding-top: 1.5rem;
+  }
+
+  .read-mores {
+    padding: 0;
   }
 
   img.mobile {
