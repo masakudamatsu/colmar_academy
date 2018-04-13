@@ -175,10 +175,11 @@ footer nav {
   /* Univesal Style */
 
   .container {
-    padding: 0 1.5rem;
+    padding: 0;
   }
 
   .desktop-section {
+    display: flex;
     padding: 2rem 0;
   }
 
@@ -192,8 +193,17 @@ footer nav {
     padding-left: 1rem;
   }
 
-  figure.desktop-figure {
+  .desktop-left {
+    padding: 0 1.5rem;
     width: 60%;
+  }
+
+  .desktop-right {
+    width: 40%;
+  }
+
+  figure.desktop-figure {
+    width: 100%;
   }
 
   figure.desktop-figure img {
@@ -221,22 +231,18 @@ footer nav {
   }
 
   /* Banner (desktop) */
-
   .banner {
     align-items: center;
-    display: flex;
-    padding-left: 1.5rem;
-  }
-
-  .banner-text {
-    padding-left: 1.5rem;
   }
 
   /* Information (Desktop) */
 
-  .testimony {
+  .information {
     display: flex;
-    flex-direction: column;
+  }
+
+  .testimony {
+    display: block;
   }
 
   /* Courses (Desktop) */
@@ -304,6 +310,12 @@ footer nav {
 
   .course p {
     padding-top: 0.5rem;
+  }
+
+  /* Exhibits (Desktop) */
+
+  .theses {
+    display: block;
   }
 
   /* Footer (Desktop) */
