@@ -23,23 +23,6 @@ h3 {
   font-size: 2rem; /* temporary */
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 1.5rem;
-  }
-
-  nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    padding-left: 1rem;
-  }
-}
-
-
 /* Header */
 header nav {
   height: 4rem;
@@ -55,34 +38,9 @@ nav.desktop-nav {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  nav.mobile-nav {
-    display: none;
-  }
-
-  nav.desktop-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .logo {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .logo img {
-    height: 2rem;
-  }
-}
-
 /* Banner */
 .banner {
   background-color: silver; /* temporary */
-}
-
-.banner .container {
-  padding: 0;
 }
 
 .banner figure {
@@ -178,11 +136,115 @@ img.desktop {
   display: none;
 }
 
+/* Exhibits */
+.exhibit {
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.exhibit h2 {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+}
+
+.thesis-main h3,
+.thesis-main p {
+  display: none;
+}
+
+.theses {
+  display: none;
+}
+
+/* Footer */
+footer {
+  padding: 1rem 0;
+}
+
+footer nav {
+  display: none;
+}
+
+/* Desktop */
 @media only screen and (min-width: 768px) {
+
+  /* Univesal Style */
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .desktop-section {
+    padding: 2rem 0;
+  }
+
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    padding-left: 1rem;
+  }
+
+  figure.desktop-figure {
+    width: 60%;
+  }
+
+  figure.desktop-figure img {
+    max-width: 100%;
+  }
+
+  /* Header (Desktop) */
+  nav.mobile-nav {
+    display: none;
+  }
+
+  nav.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  /* Banner (desktop) */
+
+  .banner {
+    align-items: center;
+    display: flex;
+    padding-left: 1.5rem;
+  }
+
+  .banner-text {
+    padding-left: 1.5rem;
+  }
+
+  /* Information (Desktop) */
+
+  .testimony {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Courses (Desktop) */
   .courses {
     background-color: silver;
     border: none;
-    padding: 2rem 4.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .courses h2 {
@@ -243,42 +305,9 @@ img.desktop {
   .course p {
     padding-top: 0.5rem;
   }
-}
 
-/* Exhibits */
-.exhibit {
-  padding-bottom: 1.5rem;
-  width: 100%;
-}
+  /* Footer (Desktop) */
 
-.exhibit h2 {
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-}
-
-video {
-  max-width: 100%;
-}
-
-.thesis-main h3,
-.thesis-main p {
-  display: none;
-}
-
-.theses {
-  display: none;
-}
-
-/* Footer */
-footer {
-  padding: 1rem 0;
-}
-
-footer nav {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
   footer {
     border-top: 1px solid silver;
   }
