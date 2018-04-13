@@ -321,11 +321,19 @@ footer nav {
   }
 
   /* Exhibits (Desktop) */
-
+  .thesis-main h3,
+  .thesis-main p,
   .theses {
     display: block;
   }
 
+  .thesis-main h3 {
+    padding-top: 1.5rem;
+  }
+
+  .thesis-main p {
+    padding-top: 0.5rem;
+  }
   /* Footer (Desktop) */
 
   footer {
