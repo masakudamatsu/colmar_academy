@@ -204,7 +204,6 @@ footer nav {
 
   .desktop-right section {
     align-items: center;
-    border: 1px solid silver;
     display: flex;
   }
 
@@ -267,6 +266,24 @@ footer nav {
 
   .read-mores {
     padding: 0;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .read-more {
+    border: 1px solid silver;
+  }
+
+  .read-more:first-child {
+    border-top: none;
+  }
+
+  .read-more:first-child figure {
+    padding-top: 2rem;
+  }
+
+  .read-more:last-child {
+    background-color: silver;
   }
 
   img.mobile {
