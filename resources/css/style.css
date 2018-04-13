@@ -23,6 +23,10 @@ h3 {
   font-size: 2rem; /* temporary */
 }
 
+figure img {
+  max-width: 100%;
+}
+
 /* Header */
 header nav {
   height: 4rem;
@@ -45,10 +49,6 @@ nav.desktop-nav {
 
 .banner figure {
   width: 100%;
-}
-
-.banner img {
-  max-width: 100%;
 }
 
 .banner-text {
@@ -81,10 +81,6 @@ nav.desktop-nav {
   display: flex;
   flex-direction: column;
   padding: 1rem 1rem 2rem 1rem;
-}
-
-.read-mores img {
-  max-width: 100%;
 }
 
 img.desktop {
@@ -310,11 +306,6 @@ footer nav {
 
   .course:first-child {
     margin-left: 0;
-  }
-
-  .course figure img {
-    height: auto;
-    width: 100%;
   }
 
   .course h3,
