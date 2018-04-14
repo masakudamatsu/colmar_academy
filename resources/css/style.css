@@ -188,7 +188,6 @@ footer nav {
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-/* @media only screen and (min-width: 1024px) { */
 
   /* Univesal Style */
 
@@ -286,7 +285,8 @@ footer nav {
     padding-top: 2rem;
   }
 
-  .testimony p {
+  .testimony p,
+  .testimony h4 {
     padding-top: 1.5rem;
   }
 
@@ -329,7 +329,7 @@ footer nav {
   }
 
   .courses h2 {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .course-container {
@@ -383,6 +383,14 @@ footer nav {
   }
 
   /* Exhibits (Desktop) */
+  .exhibit {
+    padding-bottom: 0; /* For desktop, the bottom padding is set by the .desktop-section class */
+  }
+
+  .exhibit h2 {
+    padding-bottom: 0; /* Override the mobiel screen setting. */
+  }
+
   .thesis-main h3,
   .thesis-main p,
   .theses {
