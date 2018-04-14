@@ -258,6 +258,9 @@ footer nav {
     align-items: center;
   }
 
+  .banner-text {
+    padding: 0;
+  }
   /* Information (Desktop) */
 
   .information {
