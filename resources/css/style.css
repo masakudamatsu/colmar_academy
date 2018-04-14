@@ -7,21 +7,33 @@
 
 /* Universal style */
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.2;
+}
+
+h1 { /* Logo Font */
+   font-weight: 600;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .container { /* Header and Footer */
   padding: 0 1rem;
   width: 100%;
-}
-
-h2 {
-  font-size: 4rem; /* temporary */
-}
-
-h3 {
-  font-size: 2rem;
 }
 
 figure img {
@@ -73,7 +85,7 @@ nav.desktop-nav {
 }
 
 .banner-text p {
-  font-size: 2rem; /* temporary */
+  font-size: 1rem; /* temporary */
   padding-bottom: 1.5rem;
   padding-top: 2rem;
 }
@@ -82,9 +94,11 @@ nav.desktop-nav {
   background-color: gray; /* temporary */
   color: white; /* temporary */
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   padding: 0.5rem 0;
   text-align: center;
+  text-transform: capitalize;
   width: 100%;
 }
 
@@ -143,8 +157,9 @@ img.desktop {
   width: 100%;
 }
 
-.courses h3 {
-  text-align: center;
+.courses h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
 
 .courses figure,
@@ -191,7 +206,8 @@ footer nav {
 
   /* Univesal Style */
 
-  h3 {
+  h3, .course h4 {
+    font-family: 'Cabin', sans-serif;
     font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
   }
 
@@ -263,14 +279,21 @@ footer nav {
     height: 2rem;
   }
 
+  .logo span {
+    padding-left: 0.1rem;
+  }
+
   /* Banner (desktop) */
   .banner {
     align-items: center;
   }
 
   .banner-text {
+    max-width: 341px; /* This is the minimum width for the line to break into "Learn something" and "new everyday" */
     padding: 0;
+    width: 35%;
   }
+
   /* Information (Desktop) */
 
   .information {
@@ -363,14 +386,15 @@ footer nav {
     margin-left: 0;
   }
 
-  .course h3,
+  .course h4,
   .course h6,
   .course p {
     padding-left: 1rem;
+    padding-right: 1rem;
     text-align: left;
   }
 
-  .course h3 {
+  .course h4 {
     padding-top: 1rem;
   }
 
