@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem; /* temporary */
+  font-size: 2rem;
 }
 
 figure img {
@@ -188,8 +188,13 @@ footer nav {
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 1024px) { */
 
   /* Univesal Style */
+
+  h3 {
+    font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
+  }
 
   .container { /* Header and Footer */
     padding: 0 1.5rem;
@@ -226,6 +231,7 @@ footer nav {
   .desktop-right section {
     align-items: center;
     display: flex;
+    padding-right: 1.5rem; /* Aligned with the right margin of the header and the footer */
   }
 
   .desktop-right section figure {
