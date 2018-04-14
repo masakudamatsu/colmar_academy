@@ -40,6 +40,10 @@ figure img {
   max-width: 100%;
 }
 
+.read-more-container p {
+  padding-top: 0.5rem;
+}
+
 /* Header */
 header {
   background-color: white;
@@ -241,10 +245,6 @@ footer nav {
   .read-more-container {
     padding: 0;
     width: 65%;
-  }
-
-  .read-more-container p {
-    padding-top: 0.5rem;
   }
 
   /* Header (Desktop) */
