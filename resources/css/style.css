@@ -157,8 +157,9 @@ img.desktop {
   width: 100%;
 }
 
-.courses h3 {
-  text-align: center;
+.courses h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
 
 .courses figure,
@@ -205,7 +206,8 @@ footer nav {
 
   /* Univesal Style */
 
-  h3 {
+  h3, .course h4 {
+    font-family: 'Cabin', sans-serif;
     font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
   }
 
@@ -384,14 +386,15 @@ footer nav {
     margin-left: 0;
   }
 
-  .course h3,
+  .course h4,
   .course h6,
   .course p {
     padding-left: 1rem;
+    padding-right: 1rem;
     text-align: left;
   }
 
-  .course h3 {
+  .course h4 {
     padding-top: 1rem;
   }
 
