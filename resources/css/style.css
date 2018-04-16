@@ -32,9 +32,14 @@ h3 {
 }
 
 /* Color scheme */
-header,
-footer {
-  background-color: rgb(255, 255, 255);
+html,
+header {
+  background-color: #FDFEF8;
+  color: rgb(32, 31, 32);
+}
+
+a {
+  color: rgb(32, 31, 32);
 }
 
 header {
@@ -48,11 +53,7 @@ footer {
 .banner,
 .courses {
   background-color: #8FB5E2;
-  color: #FDFEF8;
-}
-
-a {
-  color: black;
+  color: #FDFEF8; /* Off white */
 }
 
 a:hover {
@@ -115,7 +116,7 @@ nav.desktop-nav {
 
 .button {
   background-color: gray; /* temporary */
-  color: white; /* temporary */
+  color: #FDFEF8;
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
@@ -174,7 +175,7 @@ img.desktop {
 }
 
 .course {
-  background-color: white; /* Temporary */
+  background-color: #FDFEF8; /* Temporary */
   margin-top: 0.5rem;
   padding: 1rem 1rem 1.5rem 1rem;
   width: 100%;
@@ -307,7 +308,7 @@ footer nav {
   }
 
   .read-more:last-child a {
-    color: white;
+    color: #FDFEF8;
   }
 
   .read-more:last-child a:hover {
@@ -426,7 +427,7 @@ footer nav {
   }
 
   .course {
-    background-color: white; /* Temporary */
+    background-color: #FDFEF8; /* Temporary */
     flex-grow: 1;
     margin-left: 2rem;
     margin-top: 0rem; /* Reset the mobile layout */
@@ -441,7 +442,7 @@ footer nav {
   .course h4,
   .course h6,
   .course p {
-    color: black;
+    color: rgb(32, 31, 32);
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: left;
