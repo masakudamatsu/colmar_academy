@@ -174,14 +174,14 @@ img.desktop {
 /* Courses */
 .courses {
   align-items: center;
-  background-color: #8FB5E2;
+  /* background-color: #8FB5E2; */
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 }
 
 .courses h2 {
-  color: #FDFEF8;
+  /* color: #FDFEF8; */
   padding-bottom: 0.5rem; /* together with the .course class's margin-top 0.5rem, the total space is 1rem below h2. */
 }
 
@@ -194,8 +194,11 @@ img.desktop {
 
 .course {
   background-color: #FDFEF8;
+  border-bottom: 1px solid #8FB5E2;
+  border-left: 1px solid #8FB5E2;
+  /* border-right: 1px solid #8FB5E2; */
   margin-top: 0.5rem;
-  padding: 1.25rem 1rem 1.25rem 1rem; /* Different from the spec, but top padding 16px and bottom padding 24px look weird. */
+  padding: 1rem 1rem 1.5rem 1rem; /* Different from the spec, but top padding 16px and bottom padding 24px look weird. */
   width: 100%;
 }
 
