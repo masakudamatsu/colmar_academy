@@ -174,7 +174,7 @@ img.desktop {
 /* Courses */
 .courses {
   align-items: center;
-  background-color: #7695B9;
+  background-color: #8FB5E2;
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
@@ -193,20 +193,20 @@ img.desktop {
 }
 
 .course {
-  background-color: #8FB5E2;
+  background-color: #FDFEF8;
   margin-top: 0.5rem;
   padding: 1.25rem 1rem 1.25rem 1rem; /* Different from the spec, but top padding 16px and bottom padding 24px look weird. */
   width: 100%;
 }
 
 .courses h4 {
-  /* font-family: 'Raleway', sans-serif;  */
+  /* font-family: 'Raleway', sans-serif; */
   /* The Cabin typeface looks too thick. */
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .courses a {
-  color: #FDFEF8; /* Off white */
+  /* color: #7695B9; */
 }
 
 .courses figure,
