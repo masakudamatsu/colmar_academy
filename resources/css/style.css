@@ -70,11 +70,11 @@ footer {
 }
 
 a:hover {
-  color: #4D93E7; /* Same hue as #8FB5E2, but brighter */
+  color: #7695B9; /* Darker shade of #8FB5E2 */
 }
 
 .button {
-  background-color: #4D93E7;
+  background-color: #7695B9;
 }
 
 .button,
@@ -316,7 +316,7 @@ footer nav {
   }
 
   .courses a:hover {
-    color: #4D93E7; /* Same hue as #8FB5E2, but brighter */
+    color: #7695B9; /* Same hue as #8FB5E2, but brighter */
   }
 
   .read-more,
@@ -342,7 +342,7 @@ footer nav {
   }
 
   .read-more:last-child a:hover {
-    color: #4D93E7;
+    color: #7695B9;
   }
 
   /* Header (Desktop) */
