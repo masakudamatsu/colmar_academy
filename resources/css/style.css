@@ -384,6 +384,10 @@ footer nav {
     padding-top: 0rem;
   }
 
+  .read-more-container p:last-child {
+    padding-bottom: 1rem; /* Allow the bottom padding when the screen width is narrow. */
+  }
+
   img.mobile {
     display: none;
   }
