@@ -60,6 +60,15 @@ a:hover {
   color: #4D93E7; /* Same hue as #8FB5E2, but brighter */
 }
 
+.button {
+  background-color: #4D93E7;
+}
+
+.button,
+.button:hover{
+  color: #FDFEF8;
+}
+
 .container { /* Header and Footer */
   padding: 0 1rem;
   width: 100%;
@@ -115,7 +124,6 @@ nav.desktop-nav {
 }
 
 .button {
-  background-color: gray; /* temporary */
   color: #FDFEF8;
   display: block;
   font-size: 1.5rem;
@@ -124,6 +132,10 @@ nav.desktop-nav {
   text-align: center;
   text-transform: capitalize;
   width: 100%;
+}
+
+.button a:hover {
+  color: #FDFEF8;
 }
 
 /* Information section */
