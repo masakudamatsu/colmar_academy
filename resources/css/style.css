@@ -82,6 +82,9 @@ a:hover {
   color: #FDFEF8;
 }
 
+.courses {
+  border-bottom: 1px solid #8FB5E2;
+  border-top: 1px solid #8FB5E2;
 }
 
 /* Header */
@@ -171,13 +174,13 @@ img.desktop {
 /* Courses */
 .courses {
   align-items: center;
-  border: 1px solid silver;
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 }
 
 .courses h2 {
+  color: #7695B9;
   padding-bottom: 0.5rem; /* together with the .course class's margin-top 0.5rem, the total space is 1rem below h2. */
 }
 
@@ -309,6 +312,11 @@ footer nav {
   /* Color scheme */
   .courses {
     background-color: #8FB5E2;
+    border: none;
+  }
+
+  .courses h2 {
+    color: #FDFEF8; /* Override the mobile screen setting */
   }
 
   .courses a {
