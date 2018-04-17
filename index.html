@@ -166,8 +166,11 @@
         <div class="desktop-section"role="presentation">
           <section class="thesis-main desktop-left">
             <figure class="desktop-figure" role="presentation">
-              <video playsinline autoplay loop src="resources/videos/thesis.mp4" alt="A cubic building with square windows randomly located on its walls changes its shades and shadows as the day passes by">
-                The thesis video is unable to be loaded.
+              <video autoplay="true" muted="true" loop="true" playsinline="true" alt="A cubic building with square windows randomly located on its walls changes its shades and shadows as the day passes by">
+                <source src="resources/videos/thesis.mp4" type=video/mp4 />
+                <!-- Fallback video capture -->
+                <img src="resources/videos/thesis-video-capture.png" />
+                <!-- Fallback message -->The thesis video is unable to be loaded.
               </video>
             </figure>
             <h3 aria-label="Thesis title">Reimagine urban</h3>
