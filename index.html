@@ -21,7 +21,7 @@
   </head>
   <body class="page">
     <!-- Header -->
-    <header class="header">
+    <header class="header ui-component">
       <div class="container">
         <!-- Header mobile version -->
         <nav class="navbar navbar--mobile">
@@ -42,11 +42,11 @@
             <img class="logo__image" src="resources/images/ic-logo.svg" alt="Colmar Academy's logo">
             <h1 class="logo__word">Colmar<span class="logo__word-space">Academy</span></h1>
           </div>
-          <ul>
-            <li><a class="link--on-white" href="#">On campus</a> </li>
-            <li><a class="link--on-white" href="#">Online</a></li>
-            <li><a class="link--on-white" href="#">For companies</a></li>
-            <li><a class="link--on-white" href="#">Sign in</a></li>
+          <ul class="link-list">
+            <li class="link-list__item"><a class="link--on-white" href="#">On campus</a> </li>
+            <li class="link-list__item"><a class="link--on-white" href="#">Online</a></li>
+            <li class="link-list__item"><a class="link--on-white" href="#">For companies</a></li>
+            <li class="link-list__item"><a class="link--on-white" href="#">Sign in</a></li>
           </ul>
         </nav>
       </div>
@@ -55,30 +55,30 @@
     <main class="main">
       <section class="banner desktop-section">
         <div class="desktop-left">
-          <figure class="banner__image desktop-figure">
-            <img class="responsive-image" src="resources/images/banner.jpg" alt="Aerial view of students studying together">
+          <figure class="banner__image responsive-media__frame">
+            <img class="responsive-media" src="resources/images/banner.jpg" alt="Aerial view of students studying together">
           </figure>
         </div>
         <div class="banner__text desktop-right">
           <h2 class="section-title">Learn something new everyday</h2>
           <p class="banner__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="banner__button">Start here</a>
+          <a href="#" class="banner__button ui-component">Start here</a>
         </div>
       </section>
       <section class="information desktop-section">
         <div class="testimony desktop-left">
-          <figure class="desktop-figure">
-            <img class="responsive-image desktop-figure" src="resources/images/information-main.jpg" alt="A student reading his textbook">
+          <figure class="responsive-media__frame">
+            <img class="responsive-media" src="resources/images/information-main.jpg" alt="A student reading his textbook">
           </figure>
           <h2 class="section-title testimony__title">It doesn't hurt to keep practicing</h2>
           <p class="testimony__paragraph">&ldquo;Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.&rdquo;</p>
-          <p class="testimony__name">Emanuel, Sr Strategist at Hiring.com</p>
+          <p class="testimony__name ui-component">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
         <div class="read-mores desktop-right">
           <section class="read-more read-more--first">
             <figure class="read-more__image">
-              <img class="responsive-image responsive-image--mobile" src="resources/images/information-orientation-mobile.jpg" alt="Students walking">
-              <img class="responsive-image responsive-image--desktop" src="resources/images/information-orientation.jpg" alt="Students walking">
+              <img class="responsive-media responsive-image--mobile" src="resources/images/information-orientation-mobile.jpg" alt="Students walking">
+              <img class="responsive-media responsive-image--desktop" src="resources/images/information-orientation.jpg" alt="Students walking">
             </figure>
             <div class="read-more__text">
               <h3 class="subsection-title">Orientation date</h3>
@@ -88,8 +88,8 @@
           </section>
           <section class="read-more">
             <figure class="read-more__image">
-              <img class="responsive-image responsive-image--mobile" src="resources/images/information-campus-mobile.jpg" alt="Student common room">
-              <img class="responsive-image responsive-image--desktop" src="resources/images/information-campus.jpg" alt="Student common room">
+              <img class="responsive-media responsive-image--mobile" src="resources/images/information-campus-mobile.jpg" alt="Student common room">
+              <img class="responsive-media responsive-image--desktop" src="resources/images/information-campus.jpg" alt="Student common room">
             </figure>
             <div class="read-more__text">
               <h3 class="subsection-title">Our campus</h3>
@@ -99,8 +99,8 @@
           </section>
           <section class="read-more read-more--lecture">
             <figure class="read-more__image">
-              <img class="responsive-image responsive-image--mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack's portrait">
-              <img class="responsive-image responsive-image--desktop" src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack's portrait">
+              <img class="responsive-media responsive-image--mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack's portrait">
+              <img class="responsive-media responsive-image--desktop" src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack's portrait">
             </figure>
             <div class="read-more__text">
               <h3 class="subsection-title">Our guest lecture</h3>
@@ -115,31 +115,31 @@
         <div class="course-container">
           <section class="course course--first">
             <figure class="course__image">
-              <img class="responsive-image" src="resources/images/course-software.jpg" alt="Desktop computer displays on a desk">
+              <img class="responsive-media" src="resources/images/course-software.jpg" alt="Desktop computer displays on a desk">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Software engineering</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </section>
           <section class="course">
             <figure class="course__image" >
-              <img class="responsive-image" src="resources/images/course-computer-art.jpg" alt="Smartphone screen held by a hand over coffee">
+              <img class="responsive-media" src="resources/images/course-computer-art.jpg" alt="Smartphone screen held by a hand over coffee">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Computer art</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
           </section>
           <section class="course">
             <figure class="course__image" >
-              <img class="responsive-image" src="resources/images/course-design.jpg" alt="Student taking photography">
+              <img class="responsive-media" src="resources/images/course-design.jpg" alt="Student taking photography">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Design</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">User Expierence Design, User Research, Visual Design</p>
             </div>
           </section>
@@ -147,31 +147,31 @@
         <div class="course-container">
           <section class="course">
             <figure class="course__image" >
-              <img class="responsive-image" src="resources/images/course-data.jpg" alt="Laptop screen showing data visualization">
+              <img class="responsive-media" src="resources/images/course-data.jpg" alt="Laptop screen showing data visualization">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Data</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </section>
           <section class="course">
             <figure class="course__image" >
-              <img class="responsive-image" src="resources/images/course-business.jpg" alt="A chess board">
+              <img class="responsive-media" src="resources/images/course-business.jpg" alt="A chess board">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Business</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">Product Development, Business Development, Startup</p>
             </div>
           </section>
           <section class="course">
             <figure class="course__image" >
-              <img class="responsive-image" src="resources/images/course-marketing.jpg" alt="Tapping a smart watch">
+              <img class="responsive-media" src="resources/images/course-marketing.jpg" alt="Tapping a smart watch">
             </figure>
             <div class="course__text">
               <h3 class="subsection-title course__title" aria-label="Discipline"><a class="course__link" href="#">Marketing</a></h3>
-              <p class="course__detail-key">Courses</p>
+              <p class="course__detail-key ui-component">Courses</p>
               <p class="course__detail-value">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </section>
@@ -181,8 +181,8 @@
         <h2 class="section-title exhibits__title">Thesis exhibits</h2>
         <div class="desktop-section"role="presentation">
           <section class="thesis-main desktop-left">
-            <figure class="desktop-figure">
-              <video class="responsive-video" autoplay="true" muted="true" loop="true" playsinline="true" alt="A cubic building with square windows randomly located on its walls changes its shades and shadows as the day passes by">
+            <figure class="responsive-media__frame">
+              <video class="responsive-media" autoplay="true" muted="true" loop="true" playsinline="true" alt="A cubic building with square windows randomly located on its walls changes its shades and shadows as the day passes by">
                 <source src="resources/videos/thesis.mp4" type=video/mp4 />
                 <!-- Fallback video capture -->
                 <img src="resources/videos/thesis-video-capture.png" />
@@ -195,7 +195,7 @@
           <div class="theses desktop-right">
             <section class="read-more">
               <figure class="read-more__image">
-                <img class="responsive-image" src="resources/images/thesis-fisma.jpg" alt="Design student working on a desk">
+                <img class="responsive-media" src="resources/images/thesis-fisma.jpg" alt="Design student working on a desk">
               </figure>
               <div class="read-more__text">
                 <h3 class="subsection-title" aria-label="Thesis title">Fisma: Design and</h3>
@@ -204,7 +204,7 @@
             </section>
             <section class="read-more read-more--thesis-last">
               <figure class="read-more__image">
-                <img class="responsive-image" src="resources/images/thesis-now-and-then.jpg" alt="New York skyscrapers">
+                <img class="responsive-media" src="resources/images/thesis-now-and-then.jpg" alt="New York skyscrapers">
               </figure>
               <div class="read-more__text">
                 <h3 class="subsection-title" aria-label="Thesis title">Now and then</h3>
@@ -214,13 +214,13 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="container">
+      <footer class="footer ui-component">
+        <div class="footer__container container">
           <p>&copy; 2016 Colmar Academy. All rights reserved.</p>
-          <nav>
-            <ul>
-              <li><a class="link--on-white" href="#">Terms</a></li>
-              <li><a class="link--on-white" href="#">Privacy</a></li>
+          <nav class="footer__nav">
+            <ul class="link-list">
+              <li class="link-list__item"><a class="link--on-white" href="#">Terms</a></li>
+              <li class="link-list__item"><a class="link--on-white" href="#">Privacy</a></li>
             </ul>
           </nav>
         </div>
