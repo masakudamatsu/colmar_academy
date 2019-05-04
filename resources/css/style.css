@@ -361,12 +361,16 @@ footer nav {
     display: block; /* Override the mobile screen setting */
   }
 
-  .testimony h2 {
+  .testimony__title {
     padding-top: 2rem;
   }
 
-  .testimony p,
-  .testimony h4 {
+  .testimony__paragraph {
+    padding-top: 1.5rem;
+  }
+
+  .testimony__name {
+    font-weight: bold;
     padding-top: 1.5rem;
   }
 
