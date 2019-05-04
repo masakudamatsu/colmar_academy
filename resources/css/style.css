@@ -8,78 +8,87 @@
 /* Mobile or both mobile and desktop */
 
 /* Universal style */
+
+/* TODO: Remove this to let the user enlarge the font size with the browser setting */
 html {
-  font-family: 'Cabin', sans-serif;
   font-size: 16px;
-  font-weight: 400;
 }
 
-p {
+/* Typefaces (all defined here) */
+
+.page {
   font-family: 'Raleway', sans-serif;
   line-height: 1.2;
 }
 
-h1 { /* Logo Font */
-   font-weight: 600;
-}
-
-h2 {
+.section-title {
+  font-family: 'Cabin', sans-serif;
   font-size: 3rem;
   font-weight: 400;
 }
 
-h3 {
+.subsection-title {
+  font-family: 'Cabin', sans-serif;
   font-size: 2rem;
   font-weight: 400;
 }
 
-.container { /* Header and Footer */
+.ui-component {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+}
+
+/* Overall layout */
+
+.page__inner { /* Header and Footer */
   padding: 0 1rem;
   width: 100%;
 }
 
-figure img {
+.page__inner--mobile {
+  margin: 0 auto;
+  max-width: 608px;
+}
+
+/* figure img */
+.responsive-media {
   max-width: 100%;
 }
 
-.read-more-container p {
-  padding-top: 0.5rem;
-}
-
 /* Color scheme: Default */
-html,
-header {
+.page,
+.header { /* Prevent the header from being transparent */
   background-color: #FDFEF8; /* Off white */
   color: rgb(32, 31, 32); /* Very dark gray */
 }
 
-a {
+.link--on-white {
   color: rgb(32, 31, 32); /* Reset the browser's default blue color */
 }
 
-a:hover {
+.link--on-white:hover {
   color: #7695B9; /* Darker shade of the theme color of #8FB5E2 */
 }
 
 /* Header */
-header {
+.header {
   border-bottom: 1px solid #8FB5E2; /* The theme color of sky blue */
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-header nav {
+.navbar {
   height: 4rem;
 }
 
-nav.mobile-nav {
+.navbar--mobile {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-nav.desktop-nav {
+.navbar--desktop {
   display: none; /* Only for desktop screens */
 }
 
@@ -94,22 +103,24 @@ nav.desktop-nav {
   color: #FDFEF8; /* Off white */
 }
 
-.banner figure {
+.banner__image {
   width: 100%;
 }
 
-.banner-text {
+.banner__text {
   padding: 2rem 1rem;
 }
 
-.banner-text p {
+.banner__paragraph {
   font-size: 1rem;
   padding-bottom: 1.5rem;
   padding-top: 2rem;
 }
 
-.button {
+.banner__button:link,
+.banner__button:visited {
   background-color: #7695B9;
+  color: #FDFEF8;
   display: block;
   font-size: 1.5rem;
   padding: 0.5rem 0;
@@ -118,9 +129,13 @@ nav.desktop-nav {
   width: 100%;
 }
 
-.button,
-.button:hover{
-  color: #FDFEF8;
+.banner__button:hover,
+.banner__button:visited:hover {
+}
+
+/* TODO: choose the color to give the feedback to the user'a action  */
+.banner__button:active,
+.banner__button:visited:active {
 }
 
 /* Information section */
@@ -131,38 +146,37 @@ nav.desktop-nav {
 .read-mores {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem 2rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
-.read-more figure {
-  padding: 1rem 0;
+.read-more {
+  margin: 2rem 0 0 0;
 }
 
-img.desktop {
+.read-more--first {
+  margin: 0;
+}
+
+.responsive-image--desktop {
   display: none;
 }
 
-.read-more-container {
-  padding-bottom: 4rem;
-  padding-left: 1rem;
+.read-more__text {
+  padding: 0.5rem 0 0 1rem; /* Padding-left 1rem to align with the course section below */
 }
 
-.read-more:last-child .read-more-container {
-  padding-bottom: 0;
+.read-more__paragraph {
+  padding-top: 0.5rem;
 }
 
 /* Courses */
 .courses {
   align-items: center;
   background-color: #8FB5E2; /* The theme color of sky blue */
+  color: #FDFEF8; /* Off white */
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
-}
-
-.courses h2 {
-  color: #FDFEF8; /* Off white */
-  padding-bottom: 0.5rem; /* together with the .course class's margin-top 0.5rem, the total space is 1rem below h2. */
 }
 
 .course-container {
@@ -174,56 +188,57 @@ img.desktop {
 
 .course {
   border-bottom: 1px solid #FDFEF8; /* Off white */
-  margin-top: 0.5rem;
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
 }
 
-.courses h4 {
-  font-size: 1.75rem;
+.course--first {
+  border-top: 1px solid #FDFEF8; /* Off white */
+  margin: 1.5rem 0 0 0;
 }
 
-.courses a {
-  color: #FDFEF8; /* Avoid changing its color; otherwise it blends into the blue background */
+.course__title {
+  font-size: 1.5rem;
 }
 
-.courses figure,
-.courses h6,
-.courses p {
+.course__link {
+  color: inherit; /* Avoid changing its color; otherwise it blends into the blue background */
+}
+
+.course__link:hover {
+  color: #7695B9;
+}
+
+.course__image,
+.course__detail-key,
+.course__detail-value {
   display: none; /* Only for desktop screens */
 }
 
 /* Exhibits */
-.exhibit {
+.exhibits {
   padding-bottom: 1.5rem;
   width: 100%;
 }
 
-.exhibit h2 {
+.exhibits__title {
   padding: 2rem 0 1rem 0;
   text-align: center;
 }
 
-video {
-  max-width: 100%;
-}
-
-.thesis-main h3,
-.thesis-main p {
-  display: none; /* Only for desktop screens */
-}
-
+.thesis-main__title,
+.thesis-main__paragraph,
 .theses {
   display: none; /* Only for desktop screens */
 }
 
 /* Footer */
-footer {
+.footer {
   border-top: 1px solid #8FB5E2; /* The theme color of sky blue */
   padding: 1rem 0;
 }
 
-footer nav {
+.footer__nav {
   display: none; /* Only for desktop screens */
 }
 
@@ -232,8 +247,7 @@ footer nav {
 
   /* Univesal Style */
 
-  h3,
-  .course h4 {
+  .subsection-title {
     font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
   }
 
@@ -241,18 +255,23 @@ footer nav {
     padding: 0 1.5rem;
   }
 
+  .page__inner--mobile {
+    margin: 0;
+    max-width: 100%; /* Override the mobile style */
+  }
+
   .desktop-section {
     display: flex;
     padding: 2rem 0;
   }
 
-  nav ul {
+  .link-list {
     align-items: center;
     display: flex;
     justify-content: flex-end;
   }
 
-  nav ul li {
+  .link-list__item {
     padding-left: 1rem;
   }
 
@@ -265,43 +284,16 @@ footer nav {
     width: 40%;
   }
 
-  figure.desktop-figure {
+  .responsive-media__frame {
     width: 100%;
   }
 
-  .desktop-right section {
-    display: flex;
-    margin-right: 1.5rem; /* Aligned with the right margin of the header and the footer */
-  }
-
-  .information .desktop-right section:last-child {
-    display: flex;
-    margin-right: 0;
-    padding-right: 1.5rem; /* Aligned with the right margin of the header and the footer (defined by the container class above) */
-  }
-
-  .desktop-right section figure {
-    padding: 1rem;
-    width: 35%;
-  }
-
-  .read-more-container {
-    padding: 1rem 0 0 0;
-    width: 65%;
-  }
-
-  /* Color scheme */
-  .read-more,
-  .thesis {
-    border-top: 1px solid #8FB5E2;
-  }
-
   /* Header (Desktop) */
-  nav.mobile-nav {
+  .navbar--mobile {
     display: none;
   }
 
-  nav.desktop-nav {
+  .navbar--desktop {
     display: flex;
     justify-content: space-between;
   }
@@ -312,11 +304,15 @@ footer nav {
     justify-content: space-between;
   }
 
-  .logo img {
+  .logo__image {
     height: 2rem;
   }
 
-  .logo span {
+  .logo__word { /* Logo Font */
+     font-weight: 600;
+  }
+
+  .logo__word-space {
     padding-left: 0.1rem;
   }
 
@@ -325,7 +321,7 @@ footer nav {
     align-items: center;
   }
 
-  .banner-text {
+  .banner__text {
     max-width: 341px; /* Without this, the banner message gets too long. At this width, the message breaks into two lines of "Learn something new" and "everyday". */
     padding: 0;
     width: 35%;
@@ -333,11 +329,11 @@ footer nav {
 
   /* Information (Desktop) */
 
-  img.mobile {
+  .responsive-image--mobile {
     display: none;
   }
 
-  img.desktop {
+  .responsive-image--desktop {
     display: block;
   }
 
@@ -349,63 +345,73 @@ footer nav {
     display: block; /* Override the mobile screen setting */
   }
 
-  .testimony h2 {
+  .testimony__title {
     padding-top: 2rem;
   }
 
-  .testimony p,
-  .testimony h4 {
+  .testimony__paragraph {
+    padding-top: 1.5rem;
+  }
+
+  .testimony__name {
     padding-top: 1.5rem;
   }
 
   .read-mores {
     padding: 0;
-    position: relative;
-    bottom: 2rem;
   }
 
-  .read-more-container p:last-child {
-    padding-bottom: 1rem; /* Allow the bottom padding when the screen width is narrow. */
+  .read-more {
+    display: flex;
+    margin: 0 1.5rem 0 0;  /* Aligned with the right margin of the header and the footer */
+    padding: 1rem 0 0 0;
   }
 
-  .read-more:first-child {
+  .read-more__image {
+    padding: 0 1rem 1rem 1rem;
+    width: 35%;
+  }
+
+  .read-more__text {
+    padding: 0 0 1rem 0; /* Allow the bottom padding when the screen width is narrow. */
+    width: 65%;
+  }
+
+  /* Color scheme */
+  .read-more {
+    border-top: 1px solid #8FB5E2;
+  }
+
+  .read-more--first {
     border-top: none;
-    padding-top: 2rem;
-  }
-
-  .read-more:first-child figure,
-  .read-more:first-child .read-more-container {
     padding-top: 0rem;
   }
 
-  .read-more:last-child {
+  .read-more--lecture {
     background-color: #8FB5E2;
     color: #FDFEF8;
+    margin-right: 0; /* Make the background color extends to the right-edge of the browser window */
+    padding-right: 1.5rem; /* Aligned with the right margin of the header and the footer (defined by the container class above) */
   }
 
-  .read-more:last-child a {
-    color: #FDFEF8;
+  .read-more__link--lecture {
+    color: inherit;
   }
 
-  .read-more:last-child a:hover {
+  .read-more__link--lecture:hover {
     color: #7695B9;
   }
 
   /* Courses (Desktop) */
   .courses {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding: 2rem 4.5rem;
   }
 
-  .courses h2 {
-    padding-bottom: 2rem;
-  }
-
-  .courses a {
+  .course__link {
     color: rgb(32, 31, 32); /* Override the mobile screen setting */
   }
 
-  .courses a:hover {
+  .course__link:hover {
     color: #7695B9; /* Override the mobile screen setting */
   }
 
@@ -414,24 +420,21 @@ footer nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 2rem 0 0 0;
     width: 100%;
   }
 
-  .course-container:last-child {
-    margin-top: 2rem;
-  }
-
-  .courses figure,
-  .courses h6,
-  .courses p {
-    display: block; /* Override the mobile screen setting */
+  .course__image,
+  .course__detail-key,
+  .course__detail-value {
+    display: block; /* Only for desktop screens */
   }
 
   .course {
     background-color: #FDFEF8; /* Off white */
+    border: none; /* Override the mobile style */
     flex-grow: 1;
-    margin-left: 2rem;
-    margin-top: 0rem; /* Reset the mobile layout */
+    margin: 0 0 0 2rem; /* Reset the margin-top for the mobile layout */
     padding: 0 0 1.5rem 0;
     width: 31%;
   }
@@ -440,62 +443,55 @@ footer nav {
     margin-left: 0;
   }
 
-  .course h4,
-  .course h6,
-  .course p {
+  .course__text {
     color: rgb(32, 31, 32);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 1rem 0;
     text-align: left;
   }
 
-  .course h4 {
-    padding-top: 1rem;
-  }
-
-  .course h6 {
+  .course__detail-key {
     padding-top: 0.5rem;
   }
 
-  .course p {
+  .course__detail-value {
     padding-top: 0.5rem;
   }
 
   /* Exhibits (Desktop) */
-  .exhibit {
+  .exhibits {
     padding-bottom: 0; /* For desktop, the bottom padding is set by the .desktop-section class */
   }
 
-  .exhibit h2 {
+  .exhibits__title {
     padding-bottom: 0; /* Override the mobiel screen setting. */
   }
 
-  .thesis-main h3,
-  .thesis-main p,
+  .thesis-main__title,
+  .thesis-main__paragraph,
   .theses {
     display: block; /* Override the mobiel screen setting. */
   }
 
-  .thesis-main h3 {
+  .thesis-main__title {
     padding-top: 1.5rem;
   }
 
-  .thesis-main p {
+  .thesis-main__paragraph {
     padding-top: 0.5rem;
   }
 
-  .thesis:last-child {
+  .read-more--thesis-last {
     border-bottom: 1px solid #8FB5E2;
   }
 
   /* Footer (Desktop) */
 
-  footer .container {
+  .footer__container {
     display: flex;
     justify-content: space-between;
   }
-  
-  footer nav {
+
+  .footer__nav {
     display: block; /* Override the mobiel screen setting. */
   }
 }
