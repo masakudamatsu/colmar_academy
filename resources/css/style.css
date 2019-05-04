@@ -255,6 +255,11 @@ html {
     padding: 0 1.5rem;
   }
 
+  .page__inner--mobile {
+    margin: 0;
+    max-width: 100%; /* Override the mobile style */
+  }
+
   .desktop-section {
     display: flex;
     padding: 2rem 0;
