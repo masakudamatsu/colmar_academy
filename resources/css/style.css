@@ -29,7 +29,7 @@ p {
   font-weight: 400;
 }
 
-h3 {
+.subsection-title {
   font-size: 2rem;
   font-weight: 400;
 }
@@ -42,10 +42,6 @@ h3 {
 /* figure img */
 .responsive-image {
   max-width: 100%;
-}
-
-.read-more-container p {
-  padding-top: 0.5rem;
 }
 
 /* Color scheme: Default */
@@ -139,24 +135,27 @@ a:hover {
 .read-mores {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem 2rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
-.read-more figure {
-  padding: 1rem 0;
+.read-more {
+  margin: 2rem 0 0 0;
 }
 
-img.desktop {
+.read-more--first {
+  margin: 0;
+}
+
+.responsive-image--desktop {
   display: none;
 }
 
-.read-more-container {
-  padding-bottom: 4rem;
-  padding-left: 1rem;
+.read-more__text {
+  padding: 0.5rem 0 0 1rem; /* Padding-left 1rem to align with the course section below */
 }
 
-.read-more:last-child .read-more-container {
-  padding-bottom: 0;
+.read-more__paragraph {
+  padding-top: 0.5rem;
 }
 
 /* Courses */
@@ -202,25 +201,22 @@ img.desktop {
 }
 
 /* Exhibits */
-.exhibit {
+.exhibits {
   padding-bottom: 1.5rem;
   width: 100%;
 }
 
-.exhibit h2 {
+.exhibits__title {
   padding: 2rem 0 1rem 0;
   text-align: center;
 }
 
-video {
+.responsive-video {
   max-width: 100%;
 }
 
-.thesis-main h3,
-.thesis-main p {
-  display: none; /* Only for desktop screens */
-}
-
+.thesis-main__title,
+.thesis-main__paragraph,
 .theses {
   display: none; /* Only for desktop screens */
 }
@@ -240,7 +236,7 @@ footer nav {
 
   /* Univesal Style */
 
-  h3,
+  .subsection-title,
   .course h4 {
     font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
   }
@@ -288,22 +284,6 @@ footer nav {
     padding-right: 1.5rem; /* Aligned with the right margin of the header and the footer (defined by the container class above) */
   }
 
-  .desktop-right section figure {
-    padding: 1rem;
-    width: 35%;
-  }
-
-  .read-more-container {
-    padding: 1rem 0 0 0;
-    width: 65%;
-  }
-
-  /* Color scheme */
-  .read-more,
-  .thesis {
-    border-top: 1px solid #8FB5E2;
-  }
-
   /* Header (Desktop) */
   .navbar--mobile {
     display: none;
@@ -345,11 +325,11 @@ footer nav {
 
   /* Information (Desktop) */
 
-  img.mobile {
+  .responsive-image--mobile {
     display: none;
   }
 
-  img.desktop {
+  .responsive-image--desktop {
     display: block;
   }
 
@@ -374,36 +354,45 @@ footer nav {
     padding-top: 1.5rem;
   }
 
-  .read-mores {
+   .read-mores {
     padding: 0;
-    position: relative;
-    bottom: 2rem;
   }
 
-  .read-more-container p:last-child {
-    padding-bottom: 1rem; /* Allow the bottom padding when the screen width is narrow. */
+  .read-more {
+    margin: 0;
+    padding: 1rem 0 0 0;
   }
 
-  .read-more:first-child {
+  .read-more__image {
+    padding: 0 1rem 1rem 1rem;
+    width: 35%;
+  }
+
+  .read-more__text {
+    padding: 0 0 1rem 0; /* Allow the bottom padding when the screen width is narrow. */
+    width: 65%;
+  }
+
+  /* Color scheme */
+  .read-more {
+    border-top: 1px solid #8FB5E2;
+  }
+
+  .read-more--first {
     border-top: none;
-    padding-top: 2rem;
-  }
-
-  .read-more:first-child figure,
-  .read-more:first-child .read-more-container {
     padding-top: 0rem;
   }
 
-  .read-more:last-child {
+  .read-more--lecture {
     background-color: #8FB5E2;
     color: #FDFEF8;
   }
 
-  .read-more:last-child a {
-    color: #FDFEF8;
+  .read-more__link--lecture {
+    color: inherit;
   }
 
-  .read-more:last-child a:hover {
+  .read-more__link--lecture:hover {
     color: #7695B9;
   }
 
@@ -478,29 +467,29 @@ footer nav {
   }
 
   /* Exhibits (Desktop) */
-  .exhibit {
+  .exhibits {
     padding-bottom: 0; /* For desktop, the bottom padding is set by the .desktop-section class */
   }
 
-  .exhibit h2 {
+  .exhibits__title {
     padding-bottom: 0; /* Override the mobiel screen setting. */
   }
 
-  .thesis-main h3,
-  .thesis-main p,
+  .thesis-main__title,
+  .thesis-main__paragraph,
   .theses {
     display: block; /* Override the mobiel screen setting. */
   }
 
-  .thesis-main h3 {
+  .thesis-main__title {
     padding-top: 1.5rem;
   }
 
-  .thesis-main p {
+  .thesis-main__paragraph {
     padding-top: 0.5rem;
   }
 
-  .thesis:last-child {
+  .read-more--thesis-last {
     border-bottom: 1px solid #8FB5E2;
   }
 
