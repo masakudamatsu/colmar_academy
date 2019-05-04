@@ -8,9 +8,14 @@
 /* Mobile or both mobile and desktop */
 
 /* Universal style */
+
+/* TODO: Remove this to let the user enlarge the font size with the browser setting */
 html {
-  font-family: 'Cabin', sans-serif;
   font-size: 16px;
+}
+
+.page {
+  font-family: 'Cabin', sans-serif;
   font-weight: 400;
 }
 
