@@ -24,10 +24,6 @@ p {
   line-height: 1.2;
 }
 
-h1 { /* Logo Font */
-   font-weight: 600;
-}
-
 h2 {
   font-size: 3rem;
   font-weight: 400;
@@ -67,24 +63,24 @@ a:hover {
 }
 
 /* Header */
-header {
+.header {
   border-bottom: 1px solid #8FB5E2; /* The theme color of sky blue */
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-header nav {
+.navbar {
   height: 4rem;
 }
 
-nav.mobile-nav {
+.navbar--mobile {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-nav.desktop-nav {
+.navbar--desktop {
   display: none; /* Only for desktop screens */
 }
 
@@ -302,11 +298,11 @@ footer nav {
   }
 
   /* Header (Desktop) */
-  nav.mobile-nav {
+  .navbar--mobile {
     display: none;
   }
 
-  nav.desktop-nav {
+  .navbar--desktop {
     display: flex;
     justify-content: space-between;
   }
@@ -317,11 +313,15 @@ footer nav {
     justify-content: space-between;
   }
 
-  .logo img {
+  .logo__image {
     height: 2rem;
   }
 
-  .logo span {
+  .logo__word { /* Logo Font */
+     font-weight: 600;
+  }
+
+  .logo__word-space {
     padding-left: 0.1rem;
   }
 
@@ -499,7 +499,7 @@ footer nav {
     display: flex;
     justify-content: space-between;
   }
-  
+
   footer nav {
     display: block; /* Override the mobiel screen setting. */
   }
