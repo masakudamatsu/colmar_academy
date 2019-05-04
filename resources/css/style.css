@@ -164,14 +164,10 @@ a:hover,
 .courses {
   align-items: center;
   background-color: #8FB5E2; /* The theme color of sky blue */
+  color: #FDFEF8; /* Off white */
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
-}
-
-.courses h2 {
-  color: #FDFEF8; /* Off white */
-  padding-bottom: 0.5rem; /* together with the .course class's margin-top 0.5rem, the total space is 1rem below h2. */
 }
 
 .course-container {
@@ -183,22 +179,30 @@ a:hover,
 
 .course {
   border-bottom: 1px solid #FDFEF8; /* Off white */
-  margin-top: 0.5rem;
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
 }
 
-.courses h4 {
-  font-size: 1.75rem;
+.course--first {
+  border-top: 1px solid #FDFEF8; /* Off white */
+  margin: 1.5rem 0 0 0;
 }
 
-.courses a {
-  color: #FDFEF8; /* Avoid changing its color; otherwise it blends into the blue background */
+.course__title {
+  font-size: 1.5rem;
 }
 
-.courses figure,
-.courses h6,
-.courses p {
+.course__link {
+  color: inherit; /* Avoid changing its color; otherwise it blends into the blue background */
+}
+
+.course__link:hover {
+  color: #7695B9;
+}
+
+.course__image,
+.course__detail-key,
+.course__detail-value {
   display: none; /* Only for desktop screens */
 }
 
@@ -238,8 +242,7 @@ footer nav {
 
   /* Univesal Style */
 
-  .subsection-title,
-  .course h4 {
+  .subsection-title {
     font-size: 1.5rem; /* the mobile screen font-size 2rem looks too big when seen next to the square photos for desktop screens. */
   }
 
@@ -401,19 +404,14 @@ footer nav {
 
   /* Courses (Desktop) */
   .courses {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding: 2rem 4.5rem;
   }
 
-  .courses h2 {
-    padding-bottom: 2rem;
-  }
-
-  .courses a {
+  .course__link {
     color: rgb(32, 31, 32); /* Override the mobile screen setting */
   }
 
-  .courses a:hover {
+  .course__link:hover {
     color: #7695B9; /* Override the mobile screen setting */
   }
 
@@ -422,24 +420,21 @@ footer nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 2rem 0 0 0;
     width: 100%;
   }
 
-  .course-container:last-child {
-    margin-top: 2rem;
-  }
-
-  .courses figure,
-  .courses h6,
-  .courses p {
-    display: block; /* Override the mobile screen setting */
+  .course__image,
+  .course__detail-key,
+  .course__detail-value {
+    display: block; /* Only for desktop screens */
   }
 
   .course {
     background-color: #FDFEF8; /* Off white */
+    border: none; /* Override the mobile style */
     flex-grow: 1;
-    margin-left: 2rem;
-    margin-top: 0rem; /* Reset the mobile layout */
+    margin: 0 0 0 2rem; /* Reset the margin-top for the mobile layout */
     padding: 0 0 1.5rem 0;
     width: 31%;
   }
@@ -448,24 +443,19 @@ footer nav {
     margin-left: 0;
   }
 
-  .course h4,
-  .course h6,
-  .course p {
+  .course__text {
     color: rgb(32, 31, 32);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 1rem 0;
     text-align: left;
   }
 
-  .course h4 {
-    padding-top: 1rem;
-  }
-
-  .course h6 {
+  .course__detail-key {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     padding-top: 0.5rem;
   }
 
-  .course p {
+  .course__detail-value {
     padding-top: 0.5rem;
   }
 
