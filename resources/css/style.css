@@ -51,11 +51,13 @@ header {
   color: rgb(32, 31, 32); /* Very dark gray */
 }
 
-a {
+a,
+.link--on-white {
   color: rgb(32, 31, 32); /* Reset the browser's default blue color */
 }
 
-a:hover {
+a:hover,
+.link--on-white:hover {
   color: #7695B9; /* Darker shade of the theme color of #8FB5E2 */
 }
 
