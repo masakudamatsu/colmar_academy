@@ -352,7 +352,8 @@ footer nav {
   }
 
   .testimony__name {
-    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     padding-top: 1.5rem;
   }
 
