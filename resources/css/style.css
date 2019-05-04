@@ -43,6 +43,11 @@ html {
   width: 100%;
 }
 
+.page__inner--mobile {
+  margin: 0 auto;
+  max-width: 608px;
+}
+
 /* figure img */
 .responsive-media {
   max-width: 100%;
