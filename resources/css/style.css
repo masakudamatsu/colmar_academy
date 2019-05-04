@@ -24,7 +24,7 @@ p {
   line-height: 1.2;
 }
 
-h2 {
+.section-title {
   font-size: 3rem;
   font-weight: 400;
 }
