@@ -96,22 +96,24 @@ a:hover {
   color: #FDFEF8; /* Off white */
 }
 
-.banner figure {
+.banner__image {
   width: 100%;
 }
 
-.banner-text {
+.banner__text {
   padding: 2rem 1rem;
 }
 
-.banner-text p {
+.banner__paragraph {
   font-size: 1rem;
   padding-bottom: 1.5rem;
   padding-top: 2rem;
 }
 
-.button {
+.banner__button:link,
+.banner__button:visited {
   background-color: #7695B9;
+  color: #FDFEF8;
   display: block;
   font-size: 1.5rem;
   padding: 0.5rem 0;
@@ -120,9 +122,13 @@ a:hover {
   width: 100%;
 }
 
-.button,
-.button:hover{
-  color: #FDFEF8;
+.banner__button:hover,
+.banner__button:visited:hover {
+}
+
+/* TODO: choose the color to give the feedback to the user'a action  */
+.banner__button:active,
+.banner__button:visited:active {
 }
 
 /* Information section */
@@ -331,7 +337,7 @@ footer nav {
     align-items: center;
   }
 
-  .banner-text {
+  .banner__text {
     max-width: 341px; /* Without this, the banner message gets too long. At this width, the message breaks into two lines of "Learn something new" and "everyday". */
     padding: 0;
     width: 35%;
